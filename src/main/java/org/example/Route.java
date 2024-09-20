@@ -55,12 +55,13 @@ public class Route implements Comparable<Route> {
 
     void writeToFile() {
         try {
-            String fileName = "result.txt";;
+            String fileName = "result.txt";
             File file = new File(fileName);
             boolean isCreated = file.createNewFile();
             if (!isCreated) {
-                file.delete();
-                isCreated = file.createNewFile();
+                if (file.delete()) {
+                    isCreated = file.createNewFile();
+                }
             }
             if (isCreated) {
                 FileWriter fw = new FileWriter(fileName);
