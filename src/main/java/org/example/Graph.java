@@ -25,7 +25,7 @@ public class Graph {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 City city = new City(line);
-                System.out.println(city);
+//                System.out.println(city);
                 this.cities.add(city);
             }
             System.out.println(this.cities.size() + " cities imported successfully.");

@@ -28,6 +28,10 @@ public class Route implements Comparable<Route> {
         return travelOrder;
     }
 
+    public double getTravelCost() {
+        return travelCost;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
