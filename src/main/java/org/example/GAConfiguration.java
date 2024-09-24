@@ -44,6 +44,14 @@ public class GAConfiguration {
         return selectionRate;
     }
 
+    public void setPopulationSize(int populationSize) {
+        this.populationSize = populationSize;
+    }
+
+    public void setGeneration(int generation) {
+        this.generation = generation;
+    }
+
     public void setMutationRate(float mutationRate) {
         this.mutationRate = mutationRate;
     }
